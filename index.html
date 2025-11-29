@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3clinearGradient id='gold' x1='50%25' y1='0%25' x2='50%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FFD700' /%3e%3cstop offset='100%25' stop-color='%23F9A825' /%3e%3c/linearGradient%3e%3c/defs%3e%3cg%3e%3cpath d='M8,8 L44,120 L60,120 L51,30 L72,120 L88,120 L52,8 Z' fill='%231E1E1E' stroke='url(%23gold)' stroke-width='2.5' stroke-linejoin='round' /%3e%3cpath d='M63 20 C 88 16, 118 28, 113 56 C 108 78, 88 73, 78 73 C 93 78, 123 83, 115 110 C 108 133, 73 123, 63 108 L 73 108 C 88 118, 103 108, 103 93 C 103 78, 88 83, 81 83 L 81 76 C 88 76, 103 68, 103 50 C 103 33, 88 26, 73 30 L63 20 Z' fill='url(%23gold)' /%3e%3c/g%3e%3c/svg%3e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>V3 App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'v3-bg': '#121212',
+              'v3-surface': '#1e1e1e',
+              'v3-primary': '#F9A825',
+              'v3-primary-hover': '#E69500',
+              'v3-secondary': '#FFD700',
+              'v3-text-primary': '#f5f5f5',
+              'v3-text-secondary': '#a3a3a3',
+              'v3-border': '#3f3f46',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.3s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.3.1,react-dom@18.3.1",
+    "@google/genai": "https://esm.sh/@google/genai@0.1.1",
+    "@vis.gl/react-google-maps": "https://esm.sh/@vis.gl/react-google-maps@1.1.0?deps=react@18.3.1,react-dom@18.3.1",
+    "@vis.gl/react-google-maps/": "https://esm.sh/@vis.gl/react-google-maps@1.1.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-v3-bg text-v3-text-primary antialiased h-full w-full overflow-hidden select-none">
+    <div id="root" class="h-full w-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

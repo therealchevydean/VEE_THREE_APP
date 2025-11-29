@@ -1,0 +1,7 @@
+{
+  "name": "V3 App",
+  "description": "A mobile-first Progressive Web App for geomining, completing missions, and managing digital assets. Check in on the map, complete daily tasks, and track your points in the vault.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
